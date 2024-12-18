@@ -1,23 +1,14 @@
 # Grafana Example
 
-```
-Vagrant 2.4.3.
-```
-
-## Pre-requisites
+## Versions
 
 ```shell
-git init
+tabby 1.0.207                  # VMWare에 접속을 편하게 하기 위한 도구
 
-# 3. 원격 저장소 추가
-git remote add origin https://github.com/sysnet4admin/_Lecture_k8s_learning.kit.git
+vmware-fusion 13.6.1,24319021  # VMWare Fusion
 
-# 4. sparse-checkout 설정
-git sparse-checkout init
-git sparse-checkout set ch2/2.4
-
-# 5. 파일 가져오기
-git pull origin main
+vagrant 2.4.1
+vagrant-vmware-utility 1.0.22
 ```
 
 ## Get Started
