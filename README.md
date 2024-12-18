@@ -13,9 +13,23 @@ vagrant-vmware-utility 1.0.22
 
 ## Get Started
 
+필요한 도구 설치
+
 ```shell
 sudo ./ch2/2.4/.cmd
+```
 
+실습을 위한 가상환경 셋팅
+
+```shell
+cd ./ch2/2.4/k8s-adv
+
+vagrant up
+```
+
+### helm repo
+
+```shell
 ssh cp-k8s
 
 # Install Helm
@@ -24,11 +38,7 @@ sudo apt-get install apt-transport-https --yes
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
 sudo apt-get update
 sudo apt-get install helm
-```
 
-### helm repo
-
-```shell
 # Install Prometheus, Grafana
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add grafana https://grafana.github.io/helm-charts
